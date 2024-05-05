@@ -11,7 +11,9 @@ public class Menu {
             System.out.println("3. Zapisz graf do pliku txt");
             System.out.println("4. Wyświetl graf listowo");
             System.out.println("5. Wyświetl graf macierzowo");
-            System.out.println("6. Wyjdź");
+            System.out.println("6. Algorytm Kruskala");
+            System.out.println("7. Algorytm Dijkstry");
+            System.out.println("8. Wyjdź");
 
             System.out.print("Wybierz opcję: ");
             int choice = scanner.nextInt();
@@ -41,6 +43,12 @@ public class Menu {
                     }
                     break;
                 case 6:
+
+                    break;
+                case 7:
+
+                    break;
+                case 8:
                     exit = true;
                     System.out.println("Koniec programu.");
                     break;
@@ -49,7 +57,6 @@ public class Menu {
             }
         }
     }
-
 
     private static void generateGraphMenu(Graph graph, Scanner scanner) {
         System.out.print("Podaj liczbę wierzchołków grafu: ");
